@@ -33,7 +33,7 @@ p {
 }
 
 .img-fluid {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -48,6 +48,7 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
 }
+
 .navigation {
   display: flex;
   justify-content: center;
@@ -56,12 +57,16 @@ body {
   font-family: "Ralway", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
-  position: fixed;
+  /* position: fixed; */
   background-color: white;
   width: 100%;
   box-shadow: 0px 4px 4px rgba(113, 113, 113, 0.1);
 }
-
+.fa-circle-up,
+.fa-circle-down {
+  font-size: 25px;
+  cursor: pointer;
+}
 .item-nav {
   padding: 0 20px;
   color: black;
@@ -162,6 +167,10 @@ h4 {
   transform: scale(0.94);
 }
 
+.btn-link:hover {
+  transform: scale(0.94);
+}
+
 .btn-principal {
   background-color: var(--main-color);
   color: white;
@@ -198,6 +207,11 @@ h4 {
 
 .portfolio {
   background-color: var(--background-light);
+  text-align: center;
+  padding: 100px 0 30px 0;
+}
+.portfolio.wordpress {
+  background-color: white;
   text-align: center;
   padding: 100px 0 30px 0;
 }
@@ -313,27 +327,46 @@ h4 {
   h2 {
     font-size: 2.9rem;
   }
+
+  .hero-container {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .hero-inner-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 200px 0;
   }
-  .hero-inner-container img {
-    width: 200%;
-  }
+
   .hero-content {
-    background-color: red;
-    padding: 30px;
+    background-color: var(--second-background-light);
+    padding: 90px 90px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: start;
-    color: yellowgreen;
-    text-align: right;
+    color: black;
+
+    flex: 1;
+    z-index: 2;
   }
+
+  .hero-img {
+    flex: 0.7;
+    margin-left: -100px;
+  }
+
+  .hero-img img {
+    width: 100%;
+  }
+
   .hero-content p {
     text-align: left;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
+    margin: 0;
   }
 
   .container-btn-contact {
@@ -444,5 +477,8 @@ h4 {
   }
   .projet-objectifs {
     margin-top: 150px;
+  }
+  .hero-container h1 {
+    font-size: 3rem;
   }
 }

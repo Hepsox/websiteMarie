@@ -48,7 +48,7 @@ function Projet() {
       </section>
       <section className="portfolio">
         <div className="container">
-          <h3> Le projet en image ! </h3>
+          <h3> Le projet en images ! </h3>
           <div className="mockups">
             {projet.imgProjet.map((item, index) => (
               <Mockup imgPortfolio={item} key={index} />

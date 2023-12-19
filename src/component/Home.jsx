@@ -34,7 +34,6 @@ function Home() {
             <div className="encart">
               <h2> Développeur Full-Stack</h2>
             </div>
-
             <p>
               Je suis à la recherche d'une alternance en JavaScript à partir de
               février 2024 à Bordeaux. Mon objectif est d'appliquer concrètement
@@ -69,6 +68,11 @@ function Home() {
             <Button title={"Télécharger mon CV"} />
           </div>
           <div className="right">
+            {/* <img
+              className="img-fluid"
+              src="./src/assets/back-vague.png"
+              alt=""
+            /> */}
             <div className="img-profile-container">
               <img
                 className="img-fluid"
@@ -111,20 +115,13 @@ function Home() {
         </div>
       </section>
 
-      <section className="portfolio">
+      <section className="portfolio wordpress">
         <div className="container">
           <h3> Quelques réalisations WordPress </h3>
           <div className="mockups">
             <Mockup imgPortfolio={"src/assets/isabelle-rollo.jpg"} />
             <Mockup imgPortfolio={"src/assets/ad-russo-marie-delaire.jpeg"} />
             <Mockup imgPortfolio={"src/assets/crizalid-marie-delaire.jpeg"} />
-            <Mockup
-              imgPortfolio={"src/assets/galimont-veronique-marie-delaire.jpeg"}
-            />
-            <Mockup imgPortfolio={"src/assets/simiu-marie-delaire.jpeg"} />
-            <Mockup
-              imgPortfolio={"src/assets/petit-cafetier-marie-delaire.jpeg"}
-            />
           </div>
         </div>
       </section>

@@ -86,7 +86,7 @@ const projets = [
   {
     id: 3,
     slug: "externatic",
-    title: "Externatic Candidats",
+    title: "Externatic APP",
     subtitle: "Les offres d'emploi qui matchent avec votre profil",
     objectifs:
       "Créer un site internet pour les candidats d'Externatic. L'objectif était de créer un site dynamique avec une interface administrateur afin de gérer les offres d'emploi. Réalisation d'un site en React.js avec une API en Express.js et une base de données en SQL.",
@@ -119,11 +119,7 @@ const projets = [
           " J'ai créé la charte graphique de notre site et j'ai réalisé les maquettes de notre site sur Figma. L'objectif était de créer un site responsive avec une charte graphique pouvant s'adapter facilement à l'univers de chacun des bars que nous allions référencer dans notre site.",
       },
     ],
-    imgProjet: [
-      "/src/assets/moodstation-1.jpg",
-      "/src/assets/moodstation-2.jpg",
-      "/src/assets/moodstation-3.jpg",
-    ],
+    imgProjet: ["/src/assets/externatic-1.jpg"],
   },
 ];
 

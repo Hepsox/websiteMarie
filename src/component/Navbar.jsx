@@ -12,6 +12,9 @@ function Navbar() {
       <NavLink className="item-nav" to="/projet/mood-station">
         Projet 2
       </NavLink>
+      <NavLink className="item-nav" to="/projet/externatic">
+        Projet 3
+      </NavLink>
     </div>
   );
 }
