@@ -1,0 +1,418 @@
+:root {
+  /* Couleurs du thème */
+  --main-color: #da613f;
+  --second-color: #eb9e01;
+  --background-light: #fff4e6;
+  --second-background-light: #f4e9e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+}
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.hero-content {
+  background-color: var(--second-background-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.hero-content p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.hero-container {
+  background-image: linear-gradient(
+      rgba(218, 97, 63, 0.5),
+      rgba(218, 97, 63, 0.5)
+    ),
+    url("src/assets/background-hero.jpeg");
+  background-size: cover;
+}
+
+.hero-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-img img {
+  width: 70%;
+  margin-top: -50px;
+}
+
+.container-portfolio {
+  background-color: var(--background-light);
+}
+
+h1,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+}
+
+.encart {
+  background-color: var(--second-color);
+  padding: 4px 50px;
+  color: white;
+  margin: 10px 0;
+}
+
+.encart h2 {
+  font-family: "Ralway", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 5px 0;
+}
+
+.presentation {
+  margin: 50px 0;
+  padding: 0 10px;
+}
+.presentation h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.presentation p {
+  margin-bottom: 20px;
+}
+.img-profile-container {
+  margin-top: 30px;
+}
+.btn {
+  padding: 15px 20px;
+  border-radius: 4px;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 5px 0;
+
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(0.94);
+}
+
+.btn-principal {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.btn-secondaire {
+  background-color: var(--second-color);
+  color: white;
+}
+
+.parcours {
+  margin-top: 50px;
+  color: white;
+  padding: 100px 10px;
+  background-image: linear-gradient(
+      rgba(218, 97, 63, 0.9),
+      rgba(218, 97, 63, 0.9)
+    ),
+    url("src/assets/background-skills-marie-delaire.png");
+  background-size: cover;
+}
+
+.container-parcours h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.container-parcours h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.portfolio {
+  background-color: var(--background-light);
+  text-align: center;
+  padding: 100px 0 30px 0;
+}
+
+.mockups {
+  margin: 60px 0;
+}
+
+.contact {
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+  padding: 100px 15px;
+}
+
+.contact .btn {
+  margin: 20px 10px;
+}
+/* ---------------Accordéon---------------- */
+
+.accordeon {
+  margin-top: 40px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid white;
+}
+.accordeon p {
+  margin-top: 20px;
+}
+
+.accordeon-faq .inactive {
+  display: none;
+}
+
+.accordeon-faq .active {
+  display: block;
+}
+
+.accordeon-faq h3 {
+  font-size: 1.6rem;
+}
+
+.accordeon-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.parcours .subtitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* ---------------Projets---------------- */
+.projet-hero {
+  text-align: center;
+  color: white;
+  padding: 100px 10px;
+  background-image: linear-gradient(
+      rgba(218, 97, 63, 0.95),
+      rgba(218, 97, 63, 0.95)
+    ),
+    url("src/assets/background-skills-marie-delaire.png");
+  background-size: cover;
+}
+.projet-hero h1 {
+  font-size: 2.5rem;
+}
+.projet-objectifs {
+  margin: 30px 0;
+}
+
+.infos-projet {
+  margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.infos-projet h3 {
+  color: var(--main-color);
+  font-size: 2rem;
+}
+.section-info {
+  border-bottom: 1px solid black;
+  width: 80%;
+  padding: 30px 0;
+}
+
+.section-info p {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.projet-objectifs {
+  margin: 50px 10px;
+}
+
+@media screen and (min-width: 900px) {
+  h3,
+  h2 {
+    font-size: 2.9rem;
+  }
+  .hero-inner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0;
+  }
+  .hero-inner-container img {
+    width: 200%;
+  }
+  .hero-content {
+    background-color: red;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: yellowgreen;
+    text-align: right;
+  }
+  .hero-content p {
+    text-align: left;
+    font-size: 1.7rem;
+  }
+
+  .container-btn-contact {
+    display: flex;
+    justify-content: center;
+  }
+  .container-mockups {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+  }
+
+  .container-portfolio {
+    background-color: red;
+  }
+
+  /* ------------------------------- */
+
+  .presentation .container {
+    display: flex;
+    align-items: center;
+    margin: 80px auto;
+  }
+
+  .presentation .left {
+    flex: 1.2;
+    margin-right: 30px;
+  }
+  .presentation .left p {
+    margin: 30px 30px 30px 0;
+  }
+
+  .presentation .right {
+    flex: 1;
+  }
+
+  .portfolio .mockups {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .portfolio .container-img-portfolio {
+    width: 30%;
+  }
+
+  .container-contact .btn {
+    margin: 0 10px;
+  }
+  .btn {
+    font-size: 1.8;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  .portfolio img {
+    margin: 10px 10px;
+  }
+
+  .parcours .container {
+    display: flex;
+  }
+
+  .parcours-left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 60px;
+
+    justify-content: center;
+  }
+
+  .parcours-right {
+    flex: 1;
+  }
+  /* --------------Projet----------------- */
+  .projet-hero {
+    padding: 200px 0;
+  }
+  .projet-hero h1 {
+    font-size: 4rem;
+  }
+
+  .projet-hero p {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .infos-projet {
+    flex-direction: row;
+    margin-bottom: 200px;
+  }
+  .section-info {
+    display: flex;
+    border-bottom: none;
+    border-left: 1px solid black;
+    padding: 0 30px;
+    text-align: left;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .section-info h3 {
+    font-size: 3rem;
+  }
+  .projet-objectifs {
+    margin-top: 150px;
+  }
+}
