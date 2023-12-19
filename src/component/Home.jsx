@@ -1,9 +1,30 @@
 import Accordeon from "./Accordeon";
 import Button from "./Button";
 import Mockup from "./Mockup";
+import MockupWithButton from "./MockupWithButton";
 import TemplateAccordeon from "./TemplateAccordeon";
+import projets from "../../data";
 
 function Home() {
+  const questions = [
+    { skill: "React.js", detail: " Dynamisation du contenu avec React" },
+    { skill: "Node et Express", detail: " 1 ans " },
+    {
+      skill: "SQL",
+      detail:
+        " Conception et modélisation avancées de bases de données relationnelles. Maîtrise approfondie du langage SQL pour la rédaction de requêtes SELECT, INSERT, UPDATE et DELETE. ",
+    },
+    {
+      skill: "Outils",
+      detail:
+        " Git/GitHub : Versioning et collaboration avec GitHub - Trello : Coordonation de Projets ",
+    },
+    {
+      skill: "WordPress",
+      detail:
+        " Création de sites web vitrine et e-commerce WordPress avec le constructeur Elementor. Élaboration d’arborescences de navigation, maillage interne. Wireframes détaillés pour organiser la structure des pages. Création de webdesign sur mesure. Intégration des meilleures pratiques SEO : Structure des pages et titres, sitemap. Déploiement sur le serveur. Gestion des mails.",
+    },
+  ];
   return (
     <div>
       <div className="hero-container">
@@ -70,7 +91,24 @@ function Home() {
           interactifs, ainsi que l'utilisation d'API. Ma méthodologie
           intègre efficacement le versioning et la collaboration sur GitHub
           pour assurer un développement fluide.`}
+          questions={questions}
         />
+      </section>
+
+      <section className="portfolio">
+        <div className="container">
+          <h3> Les projets durant la formation </h3>
+          <div className="mockups">
+            {projets.map((projet, index) => (
+              <MockupWithButton
+                key={index}
+                title={projet.title}
+                imgPortfolio={projet.imgProjet[0]}
+                link={`/projet/${projet.slug}`}
+              />
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className="portfolio">
