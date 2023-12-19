@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 function Accordeon({ questions }) {
-  console.log(questions);
   const [accordeon, setAccordeon] = useState(-1);
   function toggleAccordeon(index) {
     if (accordeon === index) return setAccordeon(-1);

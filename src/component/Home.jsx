@@ -1,4 +1,3 @@
-import Accordeon from "./Accordeon";
 import Button from "./Button";
 import Mockup from "./Mockup";
 import MockupWithButton from "./MockupWithButton";
@@ -7,22 +6,35 @@ import projets from "../../data";
 
 function Home() {
   const questions = [
-    { skill: "React.js", detail: " Dynamisation du contenu avec React" },
-    { skill: "Node et Express", detail: " 1 ans " },
+    {
+      skill: "React.js",
+      detail:
+        " J'ai dynamisé le contenu avec React en créant des expériences interactives. Cela a impliqué la conception de composants, l'intégration de fonctionnalités avancées, et l'utilisation d'API pour enrichir les données. Cette mission a renforcé ma capacité à concevoir des interfaces utilisateur modernes et intuitives.",
+    },
+    {
+      skill: "Node et Express",
+      detail:
+        " J'ai optimisé des applications en utilisant Node.js et Express, en mettant en place des serveurs robustes et des API efficaces. Mon rôle a inclus la gestion des routes, la manipulation des données, et l'optimisation des performances pour assurer des applications réactives et évolutives. ",
+    },
     {
       skill: "SQL",
       detail:
         " Conception et modélisation avancées de bases de données relationnelles. Maîtrise approfondie du langage SQL pour la rédaction de requêtes SELECT, INSERT, UPDATE et DELETE. ",
     },
     {
-      skill: "Outils",
+      skill: "Git/GitHub",
       detail:
         " Git/GitHub : Versioning et collaboration avec GitHub - Trello : Coordonation de Projets ",
     },
     {
-      skill: "WordPress",
+      skill: "WordPress et Elementor",
       detail:
         " Création de sites web vitrine et e-commerce WordPress avec le constructeur Elementor. Élaboration d’arborescences de navigation, maillage interne. Wireframes détaillés pour organiser la structure des pages. Création de webdesign sur mesure. Intégration des meilleures pratiques SEO : Structure des pages et titres, sitemap. Déploiement sur le serveur. Gestion des mails.",
+    },
+    {
+      skill: "Figma et Adobe",
+      detail:
+        " Création d'intefaces graphiques sur mesure avec Figma. Création de chartes graphiques et de logos avec la suite Adobe. ",
     },
   ];
   return (
@@ -35,10 +47,15 @@ function Home() {
               <h2> Développeur Full-Stack</h2>
             </div>
             <p>
-              Je suis à la recherche d'une alternance en JavaScript à partir de
-              février 2024 à Bordeaux. Mon objectif est d'appliquer concrètement
-              mes compétences en entreprise, dans le cadre d'un rythme
-              d'alternance de 3 semaines en entreprise et 1 semaine à l'école.
+              Je suis à la recherche
+              <strong>
+                {" "}
+                d'une alternance en JavaScript à partir de février 2024 à
+                Bordeaux
+              </strong>
+              . Mon objectif est d'appliquer concrètement mes compétences en
+              entreprise, dans le cadre d'un rythme d'alternance de 3 semaines
+              en entreprise et 1 semaine à l'école.
             </p>
           </div>
           <div className="hero-img">
@@ -53,17 +70,25 @@ function Home() {
       <section className="presentation">
         <div className="container">
           <div className="left">
-            <h3>Créative et technique !</h3>
+            <h3>En route vers l'alternance !</h3>
 
             <p>
               Depuis 2018, en tant que freelance, j&apos;ai développé une solide
               expertise dans la création de sites web avec WordPress. En 2023,
-              j&apos;ai renforcé mes compétences en suivant une formation de
-              Développeur Web JavaScript à la Wild Code School . Cette double
-              compétence me permet de combiner créativité et maîtrise technique
-              pour concevoir des solutions web innovantes. Efficace et impactant
-              sont les maîtres mots ! Je suis là pour te créer un site internet
-              performant, à ton image et évolutif pour atteindre tes objectifs.
+              j&apos;ai renforcé mes compétences en suivant une{" "}
+              <strong>
+                formation de Développeur Web JavaScript à la Wild Code School
+              </strong>{" "}
+              . Cette double compétence me permet de combiner créativité et
+              maîtrise technique pour concevoir des solutions web innovantes.
+              Désormais je souhaite continuer à{" "}
+              <strong>développer mes compétences</strong> en JavaScript et
+              React.js en intégrant une entreprise dans le cadre de mon{" "}
+              <strong>
+                alternance pour valider mon titre de Concepteur Développeur
+                d'Applications{" "}
+              </strong>
+              (Bac+3/4).
             </p>
             <Button title={"Télécharger mon CV"} />
           </div>
