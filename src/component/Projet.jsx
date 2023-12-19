@@ -30,11 +30,11 @@ function Projet() {
           <p>{projet.duration}</p>
         </div>
         <div className="section-info">
-          <h3> Technologies</h3>
+          <h3> Languages</h3>
           <p>{projet.technologies.join(", ")}</p>
         </div>
         <div className="section-info">
-          <h3> Outils</h3>
+          <h3> Les outils</h3>
           <p>{projet.tools.join(", ")}</p>
         </div>
       </section>
