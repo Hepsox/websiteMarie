@@ -3,13 +3,14 @@ import Button from "../../component/Button";
 import axios from "axios";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import config from "../../../config";
 
 function ProjetList() {
   const [projects, setProjects] = useState(useLoaderData());
 
   const handleDelete = (id) => {
     try {
-      axios.delete(`http://localhost:8100/projet/${id}`);
+      axios.delete(`${config.backend_url}/projet/${id}`);
       setProjects(projects.filter((projet) => projet.id !== id));
     } catch (err) {
       console.error(err);

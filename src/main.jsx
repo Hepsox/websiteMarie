@@ -9,6 +9,9 @@ import Projet from "./component/Projet.jsx";
 import Admin from "./component/Admin.jsx";
 import ProjetList from "./pages/admin/ProjetList.jsx";
 import ProjetForm from "./pages/admin/ProjetForm.jsx";
+
+import config from "../config";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,7 +21,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
         loader: async () => {
-          const response = await axios.get(`http://localhost:8100/projet`);
+          const response = await axios.get(`${config.backend_url}/projet`);
           return response.data;
         },
       },
@@ -27,43 +30,43 @@ const router = createBrowserRouter([
         element: <Projet />,
         loader: async ({ params }) => {
           const response = await axios.get(
-            `http://localhost:8100/projet/${params.slug}`
+            `${config.backend_url}/projet/${params.slug}`
           );
           return response.data;
         },
       },
     ],
   },
-  {
-    path: "/admin",
-    element: <Admin />,
-    children: [
-      {
-        path: "projets",
-        element: <ProjetList />,
-        loader: async () => {
-          const response = await axios.get(`http://localhost:8100/projet`);
-          return response.data;
-        },
-      },
-      {
-        path: "projets/ajouter",
-        element: <ProjetForm />,
-      },
+  // {
+  //   path: "/admin",
+  //   element: <Admin />,
+  //   children: [
+  //     {
+  //       path: "projets",
+  //       element: <ProjetList />,
+  //       loader: async () => {
+  //         const response = await axios.get(`${config.backend_url}/projet`);
+  //         return response.data;
+  //       },
+  //     },
+  //     {
+  //       path: "projets/ajouter",
+  //       element: <ProjetForm />,
+  //     },
 
-      {
-        path: "projets/:id/modifier",
-        element: <ProjetForm />,
-        loader: async ({ params }) => {
-          const response = await axios.get(
-            `http://localhost:8100/projet/id/${params.id}`
-          );
-          console.log(response.data);
-          return response.data;
-        },
-      },
-    ],
-  },
+  //     {
+  //       path: "projets/:id/modifier",
+  //       element: <ProjetForm />,
+  //       loader: async ({ params }) => {
+  //         const response = await axios.get(
+  //           `${config.backend_url}/projet/id/${params.id}`
+  //         );
+  //         console.log(response.data);
+  //         return response.data;
+  //       },
+  //     },
+  //   ],
+  // },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

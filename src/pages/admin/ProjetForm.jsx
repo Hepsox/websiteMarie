@@ -4,6 +4,8 @@ import Input from "../../component/input/Input";
 import { useState } from "react";
 import { useLoaderData, useNavigate } from "react-router-dom";
 
+import config from "../../../config";
+
 function ProjetForm() {
   const [projet, setProjet] = useState(useLoaderData() ?? {});
   const navigate = useNavigate();
@@ -28,9 +30,9 @@ function ProjetForm() {
 
     try {
       if (projet.id) {
-        await axios.put(`http://localhost:8100/projet/${projet.id}`, projet);
+        await axios.put(`${config.backend_url}/projet/${projet.id}`, projet);
       } else {
-        await axios.post("http://localhost:8100/projet", projet);
+        await axios.post(`${config.backend_url}/projet`, projet);
       }
       navigate("/admin/projets");
     } catch (err) {
