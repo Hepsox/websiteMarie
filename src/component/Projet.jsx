@@ -1,12 +1,14 @@
 import TemplateAccordeon from "./TemplateAccordeon";
 import Mockup from "./Mockup";
-import projets from "../../data";
-import { useParams } from "react-router-dom";
+// import projets from "../../data";
+import { useLoaderData } from "react-router-dom";
 
 function Projet() {
-  const { slug } = useParams();
+  const projet = useLoaderData();
 
-  const projet = projets.find((item) => item.slug === slug);
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
+  // const projet = projets.find((item) => item.slug === slug);
 
   return (
     <>
@@ -20,7 +22,7 @@ function Projet() {
       <section className="projet-objectifs">
         <div className="container">
           <h3>Les objectifs du projet</h3>
-          <p>{projet.objectifs}</p>
+          <p>{projet.goals}</p>
         </div>
       </section>
 
@@ -31,26 +33,26 @@ function Projet() {
         </div>
         <div className="section-info">
           <h3> Languages</h3>
-          <p>{projet.technologies.join(", ")}</p>
+          <p>{projet.languages}</p>
         </div>
         <div className="section-info">
           <h3> Les outils</h3>
-          <p>{projet.tools.join(", ")}</p>
+          <p>{projet.tools}</p>
         </div>
       </section>
       <section>
         <TemplateAccordeon
-          title={projet.accordeonTitle}
-          subtitle={projet.accordeonSubtitle}
-          description={projet.accordeonDescription}
-          questions={projet.accordeonQuestions}
+          title="Le projet en détail"
+          subtitle="Les fonctionnalités de l'application"
+          description={projet.text_faq}
+          questions={projet.faq}
         />
       </section>
       <section className="portfolio">
         <div className="container">
           <h3> Le projet en images ! </h3>
           <div className="mockups">
-            {projet.imgProjet.map((item, index) => (
+            {projet.photos.map((item, index) => (
               <Mockup imgPortfolio={item} key={index} />
             ))}
           </div>

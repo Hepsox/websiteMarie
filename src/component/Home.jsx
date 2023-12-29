@@ -2,9 +2,12 @@ import Button from "./Button";
 import Mockup from "./Mockup";
 import MockupWithButton from "./MockupWithButton";
 import TemplateAccordeon from "./TemplateAccordeon";
-import projets from "../../data";
+import ButtonCV from "./ButtonCV";
+import { useLoaderData } from "react-router-dom";
 
 function Home() {
+  const projets = useLoaderData();
+
   const questions = [
     {
       skill: "React.js",
@@ -71,7 +74,6 @@ function Home() {
         <div className="container">
           <div className="left">
             <h3>En route vers l'alternance !</h3>
-
             <p>
               Depuis 2018, en tant que freelance, j&apos;ai développé une solide
               expertise dans la création de sites web avec WordPress. En 2023,
@@ -90,7 +92,7 @@ function Home() {
               </strong>
               (Bac+3/4).
             </p>
-            <Button title={"Télécharger mon CV"} />
+            <ButtonCV className="btn-cv" />
           </div>
           <div className="right">
             {/* <img
@@ -132,7 +134,7 @@ function Home() {
               <MockupWithButton
                 key={index}
                 title={projet.title}
-                imgPortfolio={projet.imgProjet[0]}
+                imgPortfolio={projet.photos[0]}
                 link={`/projet/${projet.slug}`}
               />
             ))}
@@ -163,10 +165,14 @@ function Home() {
             <Button
               title={"Envoyez un email"}
               classNameBtn={"btn-secondaire"}
+              onClick={() =>
+                (window.location.href = "mailto:marie.delaire@outlook.com")
+              }
             />
             <Button
               title={"Téléphonez-moi !"}
               classNameBtn={"btn-secondaire"}
+              onClick={() => (window.location.href = "tel:+33622170231")}
             />
           </div>
         </div>

@@ -50,7 +50,7 @@ const projets = [
       "L'objecif de ce projet était de consommer une API afin de récupérer des données et de les afficher sur notre site. Nous avons utilisé l'API de Spotify afin de récupérer des playlists en fonction de l'humeur de l'utilisateur.",
     duration: "4 semaines",
     technologies: ["HTML/CSS, JavaScript, React.js,"],
-    tools: ["Trello", "Figma", "Github"],
+    tools: ["Trello", "Figma", "GitHub"],
     accordeonTitle: "Le projet en détail",
     accordeonSubtitle: "Les fonctionnalités de l'application",
     accordeonDescription:

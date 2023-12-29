@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-function Button({ title, classNameBtn }) {
+function Button({ title, classNameBtn, type, onClick }) {
   if (!classNameBtn) {
     classNameBtn = "btn-principal";
   }
@@ -7,11 +7,9 @@ function Button({ title, classNameBtn }) {
   classNameBtn = `btn ${classNameBtn}`;
 
   return (
-    <div>
-      <button className={classNameBtn} type="submit">
-        {title}
-      </button>
-    </div>
+    <button className={classNameBtn} type={type ?? "button"} onClick={onClick}>
+      {title}
+    </button>
   );
 }
 Button.propTypes = {
