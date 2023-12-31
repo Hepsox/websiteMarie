@@ -94,7 +94,7 @@ body {
       rgba(218, 97, 63, 0.5),
       rgba(218, 97, 63, 0.5)
     ),
-    url("/src/assets/background-hero.jpeg");
+    url("/background-hero.jpeg");
   background-size: cover;
 }
 
@@ -106,7 +106,7 @@ body {
 }
 .hero-img img {
   width: 70%;
-  margin-top: -50px;
+  /* margin-top: -50px; */
 }
 
 .container-portfolio {
@@ -214,7 +214,7 @@ h4 {
       rgba(218, 97, 63, 0.9),
       rgba(218, 97, 63, 0.9)
     ),
-    url("src/assets/background-skills-marie-delaire.png");
+    url("/background-skills-marie-delaire.png");
   background-size: cover;
 }
 
@@ -435,7 +435,7 @@ table.projet-dashboard {
       rgba(218, 97, 63, 0.92),
       rgba(218, 97, 63, 0.92)
     ),
-    url("/src/assets/background-hero-projet.jpeg");
+    url("/background-hero-projet.jpeg");
   background-size: cover;
 }
 .projet-hero h1 {
@@ -525,7 +525,7 @@ table.projet-dashboard {
   }
 
   .hero-container {
-    min-height: 85vh;
+    min-height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -539,7 +539,7 @@ table.projet-dashboard {
 
   .hero-content {
     background-color: var(--second-background-light);
-    padding: 90px 90px;
+    padding: 55px 55px;
     display: flex;
     flex-direction: column;
     justify-content: center;

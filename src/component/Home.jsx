@@ -10,29 +10,29 @@ function Home() {
 
   const questions = [
     {
-      skill: "React.js",
+      skill: "React",
       detail:
-        " J'ai dynamisé le contenu avec React en créant des expériences interactives. Cela a impliqué la conception de composants, l'intégration de fonctionnalités avancées, et l'utilisation d'API pour enrichir les données. Cette mission a renforcé ma capacité à concevoir des interfaces utilisateur modernes et intuitives.",
+        "J'ai appris à dynamiser le contenu d’une application avec React en créant des expériences interactives. Cela a impliqué la conception de composants, l'intégration de fonctionnalités avancées, et l'utilisation d'API pour enrichir les données. Cette mission a renforcé ma capacité à concevoir des interfaces utilisateur modernes et intuitives.",
     },
     {
-      skill: "Node et Express",
+      skill: "Express",
       detail:
-        " J'ai optimisé des applications en utilisant Node.js et Express, en mettant en place des serveurs robustes et des API efficaces. Mon rôle a inclus la gestion des routes, la manipulation des données, et l'optimisation des performances pour assurer des applications réactives et évolutives. ",
+        "J'ai développé des applications back-end en utilisant le framework Express.js. L’objectif étant de rendre les API robustes et efficaces. J’ai appris la gestion des routes, la manipulation des données, et l'optimisation des performances pour assurer des applications réactives et évolutives.",
     },
     {
       skill: "SQL",
       detail:
-        " Conception et modélisation avancées de bases de données relationnelles. Maîtrise approfondie du langage SQL pour la rédaction de requêtes SELECT, INSERT, UPDATE et DELETE. ",
+        "Conception et modélisation avancées de bases de données relationnelles. Maîtrise du langage SQL pour la rédaction de requêtes SELECT, INSERT, UPDATE et DELETE. ",
     },
     {
       skill: "Git/GitHub",
       detail:
-        " Git/GitHub : Versioning et collaboration avec GitHub - Trello : Coordonation de Projets ",
+        "Versioning et collaboration avec Git et GitHub. Création de branches, pull requests, et résolution de conflits.",
     },
     {
       skill: "WordPress et Elementor",
       detail:
-        " Création de sites web vitrine et e-commerce WordPress avec le constructeur Elementor. Élaboration d’arborescences de navigation, maillage interne. Wireframes détaillés pour organiser la structure des pages. Création de webdesign sur mesure. Intégration des meilleures pratiques SEO : Structure des pages et titres, sitemap. Déploiement sur le serveur. Gestion des mails.",
+        " Création de sites web vitrine et e-commerce WordPress avec le constructeur Elementor. Élaboration d’arborescences de navigation, maillage interne. Wireframes détaillés pour organiser la structure des pages. Création de webdesign sur mesure. Intégration des meilleures pratiques SEO : Structure des pages et titres, sitemap. Déploiement sur le serveur.",
     },
     {
       skill: "Figma et Adobe",
@@ -50,15 +50,14 @@ function Home() {
               <h2> Développeur Full-Stack</h2>
             </div>
             <p>
-              Je suis à la recherche
-              <strong>
-                {" "}
-                d'une alternance en JavaScript à partir de février 2024 à
-                Bordeaux
-              </strong>
-              . Mon objectif est d'appliquer concrètement mes compétences en
-              entreprise, dans le cadre d'un rythme d'alternance de 3 semaines
-              en entreprise et 1 semaine à l'école.
+              En tant que <strong>freelance depuis 2018</strong>, j&apos;ai
+              développé une solide expertise dans la{" "}
+              <strong>création de sites web</strong> avec WordPress. En 2023,
+              j&apos;ai renforcé mes compétences en suivant une{" "}
+              <strong>formation de Développeur Web JavaScript</strong> à la Wild
+              Code School. Je suis à la recherche d&apos;une{" "}
+              <strong>alternance en JavaScript à partir de février 2024</strong>{" "}
+              à Bordeaux.
             </p>
           </div>
           <div className="hero-img">
@@ -73,33 +72,26 @@ function Home() {
       <section className="presentation">
         <div className="container">
           <div className="left">
-            <h3>En route vers l'alternance !</h3>
+            <h3>En route vers l&apos;alternance !</h3>
             <p>
-              Depuis 2018, en tant que freelance, j&apos;ai développé une solide
-              expertise dans la création de sites web avec WordPress. En 2023,
-              j&apos;ai renforcé mes compétences en suivant une{" "}
+              Avec cette alternance, mon objectif est{" "}
               <strong>
-                formation de Développeur Web JavaScript à la Wild Code School
-              </strong>{" "}
-              . Cette double compétence me permet de combiner créativité et
-              maîtrise technique pour concevoir des solutions web innovantes.
-              Désormais je souhaite continuer à{" "}
-              <strong>développer mes compétences</strong> en JavaScript et
-              React.js en intégrant une entreprise dans le cadre de mon{" "}
-              <strong>
-                alternance pour valider mon titre de Concepteur Développeur
-                d'Applications{" "}
+                d&apos;appliquer concrètement mes compétences en entreprise
               </strong>
-              (Bac+3/4).
+              . Ma double compétence en WordPress et JavaScript me permet de
+              combiner créativité et maîtrise technique pour concevoir des
+              solutions web innovantes. Désormais, je souhaite continuer à
+              développer mes compétences en JavaScript et React en intégrant une
+              entreprise dans le cadre de mon <strong>alternance</strong> (3
+              semaines en entreprise / 1 semaine à l’école) pour valider mon{" "}
+              <strong>
+                titre de Concepteur Développeur d&apos;Applications (Bac+3/4)
+              </strong>
+              .
             </p>
             <ButtonCV className="btn-cv" />
           </div>
           <div className="right">
-            {/* <img
-              className="img-fluid"
-              src="./src/assets/back-vague.png"
-              alt=""
-            /> */}
             <div className="img-profile-container">
               <img className="img-fluid" src="marie-delaire.jpeg" alt="" />
             </div>
@@ -111,13 +103,7 @@ function Home() {
         <TemplateAccordeon
           title={"Un profil multifacettes"}
           subtitle={"Mes compétences techniques"}
-          description={`Mon expertise s'étend de la conception de chartes graphiques, du
-          maquettage et de l'intégration HTML/CSS, à la dynamisation du
-          contenu avec React.js. J'ai une expérience significative dans la
-          mise en place de routers, la création de composants et de pages
-          interactifs, ainsi que l'utilisation d'API. Ma méthodologie
-          intègre efficacement le versioning et la collaboration sur GitHub
-          pour assurer un développement fluide.`}
+          description={`Mon expertise s'étend de la conception de chartes graphiques, du maquettage et de l'intégration HTML/CSS, à la dynamisation du contenu avec React. J'ai une expérience significative dans la mise en place de routers, la création de pages et de composants interactifs, ainsi que l'utilisation et la création d'API. Ma méthodologie intègre efficacement le versioning et la collaboration sur GitHub pour assurer un développement fluide.`}
           questions={questions}
         />
       </section>
@@ -142,9 +128,24 @@ function Home() {
         <div className="container">
           <h3> Quelques réalisations WordPress </h3>
           <div className="mockups">
-            <Mockup imgPortfolio={"/isabelle-rollo.jpg"} />
-            <Mockup imgPortfolio={"/ad-russo-marie-delaire.jpeg"} />
-            <Mockup imgPortfolio={"crizalid-marie-delaire.jpeg"} />
+            <MockupWithButton
+              imgPortfolio={"/isabelle-rollo.jpg"}
+              title="DSN Conseil"
+              link="https://delphinenouvian.com/"
+              target="_blank"
+            />
+            <MockupWithButton
+              imgPortfolio={"/ad-russo-marie-delaire.jpeg"}
+              title="Novitoit"
+              link="https://novitoit.fr/"
+              target="_blank"
+            />
+            <MockupWithButton
+              imgPortfolio={"crizalid-marie-delaire.jpeg"}
+              title="Proximum"
+              link="https://proximum.org/"
+              target="_blank"
+            />
           </div>
         </div>
       </section>
