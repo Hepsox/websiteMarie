@@ -64,7 +64,7 @@ function Home() {
           <div className="hero-img">
             <img
               className="img-fluid"
-              src="./src/assets/marie-delaire-portfolio.jpeg"
+              src="/marie-delaire-portfolio.jpeg"
               alt=""
             />
           </div>
@@ -101,11 +101,7 @@ function Home() {
               alt=""
             /> */}
             <div className="img-profile-container">
-              <img
-                className="img-fluid"
-                src="./src/assets/marie-delaire.jpeg"
-                alt=""
-              />
+              <img className="img-fluid" src="marie-delaire.jpeg" alt="" />
             </div>
           </div>
         </div>
@@ -146,9 +142,9 @@ function Home() {
         <div className="container">
           <h3> Quelques réalisations WordPress </h3>
           <div className="mockups">
-            <Mockup imgPortfolio={"src/assets/isabelle-rollo.jpg"} />
-            <Mockup imgPortfolio={"src/assets/ad-russo-marie-delaire.jpeg"} />
-            <Mockup imgPortfolio={"src/assets/crizalid-marie-delaire.jpeg"} />
+            <Mockup imgPortfolio={"/isabelle-rollo.jpg"} />
+            <Mockup imgPortfolio={"/ad-russo-marie-delaire.jpeg"} />
+            <Mockup imgPortfolio={"crizalid-marie-delaire.jpeg"} />
           </div>
         </div>
       </section>
