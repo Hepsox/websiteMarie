@@ -129,19 +129,19 @@ function Home() {
           <h3> Quelques réalisations WordPress </h3>
           <div className="mockups">
             <MockupWithButton
-              imgPortfolio={"/isabelle-rollo.jpg"}
+              imgPortfolio={"/dsn-conseil.jpg"}
               title="DSN Conseil"
               link="https://delphinenouvian.com/"
               target="_blank"
             />
             <MockupWithButton
-              imgPortfolio={"/ad-russo-marie-delaire.jpeg"}
+              imgPortfolio={"/novitoit.jpg"}
               title="Novitoit"
               link="https://novitoit.fr/"
               target="_blank"
             />
             <MockupWithButton
-              imgPortfolio={"crizalid-marie-delaire.jpeg"}
+              imgPortfolio={"/proximum-formations.jpg"}
               title="Proximum"
               link="https://proximum.org/"
               target="_blank"
