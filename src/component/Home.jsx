@@ -62,7 +62,7 @@ function Home() {
           <div className="hero-img">
             <img
               className="img-fluid"
-              src="/marie-delaire-portfolio.jpeg"
+              src="/marie-delaire-portfolio.jpg"
               alt=""
             />
           </div>
