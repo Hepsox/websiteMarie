@@ -1,5 +1,4 @@
 import Button from "./Button";
-import Mockup from "./Mockup";
 import MockupWithButton from "./MockupWithButton";
 import TemplateAccordeon from "./TemplateAccordeon";
 import ButtonCV from "./ButtonCV";
