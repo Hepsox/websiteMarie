@@ -500,8 +500,8 @@ table.projet-dashboard {
   margin-top: 8px;
 }
 .container-icon-footer i {
-  margin: 8px 8px;
-  font-size: 22px;
+  margin: 8px 22px;
+  font-size: 25px;
   color: white;
   background-color: var(--main-color);
   padding: 8px;
