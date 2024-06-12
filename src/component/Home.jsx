@@ -108,7 +108,7 @@ function Home() {
         <TemplateAccordeon
           title={"Un profil multifacettes"}
           subtitle={"Mes compétences techniques"}
-          description={`Mon expertise s'étend de la conception de chartes graphiques, du maquettage et de l'intégration HTML/CSS, à la dynamisation du contenu avec React. J'ai une expérience significative dans la mise en place de routers, la création de pages et de composants interactifs, ainsi que l'utilisation et la création d'API. Ma méthodologie intègre efficacement le versioning et la collaboration sur GitHub pour assurer un développement fluide.`}
+          description={`En tant que développeuse passionnée, je suis constamment en quête d'apprentissage et de perfectionnement. La communication est au cœur de ma façon de travailler ; je suis attentive aux idées de mes collègues et ouverte à la collaboration, ce qui favorise une efficacité d'équipe. Je suis convaincue de l'importance de rester curieuse et de s'adapter aux évolutions technologiques et méthodologiques. C'est cette mentalité qui me pousse à relever de nouveaux défis et à proposer des solutions adaptées et efficaces. Chaque obstacle est pour moi une occasion d'apprendre et de progresser, et je m'engage à continuer à développer mes compétences pour répondre aux défis futurs avec confiance et créativité.`}
           questions={questions}
         />
       </section>

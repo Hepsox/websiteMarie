@@ -8,10 +8,10 @@ function Projet() {
   console.log(projet);
 
   const heroStyle = {
-    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(${projet.background})`, // Ajout d'un dégradé avec une opacité noire
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(${projet.background})`, // Ajout d'un dégradé avec une opacité noire
     backgroundSize: "cover",
     backgroundPosition: "center",
-    padding: "130px 0", // Ajustez le padding selon vos besoins
+    padding: "180px 0 130px 0", // Ajustez le padding selon vos besoins
     color: "#fff", // Assurez-vous que le texte soit lisible
     textAlign: "center",
   };
