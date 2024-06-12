@@ -68,7 +68,7 @@ body {
   cursor: pointer;
 }
 .item-nav {
-  padding: 0 20px;
+  padding: 0 10px;
   color: black;
   font-size: 0.8rem;
 }
@@ -138,8 +138,8 @@ h4 {
   margin: 50px 0;
   padding: 0 10px;
 }
-.presentation h2 {
-  font-size: 1.8rem;
+.presentation h3 {
+  font-size: 2.8rem;
   margin-bottom: 10px;
 }
 .presentation p {
@@ -427,17 +427,7 @@ table.projet-dashboard {
   margin-top: 20px;
 }
 /* ---------------Projets---------------- */
-.projet-hero {
-  text-align: center;
-  color: white;
-  padding: 100px 10px;
-  background-image: linear-gradient(
-      rgba(218, 97, 63, 0.92),
-      rgba(218, 97, 63, 0.92)
-    ),
-    url("/background-hero-projet.jpeg");
-  background-size: cover;
-}
+
 .projet-hero h1 {
   font-size: 2.5rem;
 }

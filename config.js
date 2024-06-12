@@ -1,5 +1,5 @@
 const config = {
-  backend_url: "https://api.mariedelaire.fr/",
+  backend_url: "http://localhost:8100",
 };
 
 export default config;

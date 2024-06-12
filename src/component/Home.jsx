@@ -9,12 +9,12 @@ function Home() {
 
   const questions = [
     {
-      skill: "React",
+      skill: "React et Angular",
       detail:
         "J'ai appris à dynamiser le contenu d’une application avec React en créant des expériences interactives. Cela a impliqué la conception de composants, l'intégration de fonctionnalités avancées, et l'utilisation d'API pour enrichir les données. Cette mission a renforcé ma capacité à concevoir des interfaces utilisateur modernes et intuitives.",
     },
     {
-      skill: "Express",
+      skill: "Express et Spring",
       detail:
         "J'ai développé des applications back-end en utilisant le framework Express.js. L’objectif étant de rendre les API robustes et efficaces. J’ai appris la gestion des routes, la manipulation des données, et l'optimisation des performances pour assurer des applications réactives et évolutives.",
     },
@@ -38,6 +38,11 @@ function Home() {
       detail:
         " Création d'intefaces graphiques sur mesure avec Figma. Création de chartes graphiques et de logos avec la suite Adobe. ",
     },
+    {
+      skill: "Java et JavaScript",
+      detail:
+        " Création d'intefaces graphiques sur mesure avec Figma. Création de chartes graphiques et de logos avec la suite Adobe. ",
+    },
   ];
   return (
     <div>
@@ -49,14 +54,12 @@ function Home() {
               <h2> Développeur Full-Stack</h2>
             </div>
             <p>
-              En tant que <strong>freelance depuis 2018</strong>, j&apos;ai
-              développé une solide expertise dans la{" "}
-              <strong>création de sites web</strong> avec WordPress. En 2023,
-              j&apos;ai renforcé mes compétences en suivant une{" "}
-              <strong>formation de Développeur Web JavaScript</strong> à la Wild
-              Code School. Je suis à la recherche d&apos;une{" "}
-              <strong>alternance en JavaScript à partir de février 2024</strong>{" "}
-              à Bordeaux.
+              Depuis 2018, en tant que freelance, j'ai développé une solide
+              expertise dans la création de sites web avec WordPress. En 2024,
+              j'ai obtenu mon titre de{" "}
+              <strong>Développeur Web et Web Mobile JavaScript</strong> à la
+              Wild Code School. J'ai renforcé mes compétences en intégrant une
+              POEC <strong>Java/Angular</strong>.
             </p>
           </div>
           <div className="hero-img">
@@ -72,27 +75,30 @@ function Home() {
         <div className="container">
           <div className="left">
             <h3>En route vers l&apos;alternance !</h3>
+            <h4>3 semaines en entreprise / 1 semaine à l’école</h4>
             <p>
-              Avec cette alternance, mon objectif est{" "}
+              Dans le cadre de mon alternance, je veux mettre en pratique mes
+              compétences et en acquérir de nouvelles, notamment en JavaScript
+              (React ou Angular) et en Java (Spring). En intégrant une
+              entreprise, je vise à valider mon{" "}
               <strong>
-                d&apos;appliquer concrètement mes compétences en entreprise
-              </strong>
-              . Ma double compétence en WordPress et JavaScript me permet de
-              combiner créativité et maîtrise technique pour concevoir des
-              solutions web innovantes. Désormais, je souhaite continuer à
-              développer mes compétences en JavaScript et React en intégrant une
-              entreprise dans le cadre de mon <strong>alternance</strong> (3
-              semaines en entreprise / 1 semaine à l’école) pour valider mon{" "}
-              <strong>
-                titre de Concepteur Développeur d&apos;Applications (Bac+3/4)
-              </strong>
-              .
+                titre de Concepteur Développeur d'Applications (Bac+3/4)
+              </strong>{" "}
+              tout en contribuant à des projets concrets. Je crois que le succès
+              repose sur l'investissement humain et la collaboration. J'adore
+              apprendre des autres, partager des idées (même les plus folles) et
+              relever des défis ensemble. Avec un peu d'humour et beaucoup de
+              café, je suis sûr qu'on peut accomplir de grandes choses !
             </p>
             <ButtonCV className="btn-cv" />
           </div>
           <div className="right">
             <div className="img-profile-container">
-              <img className="img-fluid" src="marie-delaire.jpeg" alt="" />
+              <img
+                className="img-fluid"
+                src="marie-delaire.jpeg"
+                alt="photo Marie Delaire"
+              />
             </div>
           </div>
         </div>

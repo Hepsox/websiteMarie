@@ -1,21 +1,35 @@
 import TemplateAccordeon from "./TemplateAccordeon";
 import Mockup from "./Mockup";
 // import projets from "../../data";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 function Projet() {
   const projet = useLoaderData();
+  console.log(projet);
 
-  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-
-  // const projet = projets.find((item) => item.slug === slug);
+  const heroStyle = {
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(${projet.background})`, // Ajout d'un dégradé avec une opacité noire
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    padding: "130px 0", // Ajustez le padding selon vos besoins
+    color: "#fff", // Assurez-vous que le texte soit lisible
+    textAlign: "center",
+  };
 
   return (
     <>
-      <section className="projet-hero">
+      <section className="projet-hero" style={heroStyle}>
         <div className="container">
           <h1>{projet.title}</h1>
           <p>{projet.subtitle}</p>
+          <Link
+            to={projet.website}
+            className="btn btn-principal"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visiter le site
+          </Link>
         </div>
       </section>
 

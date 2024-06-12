@@ -8,7 +8,6 @@ function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          {" "}
           marie.delaire@outlook.com
         </a>
       </div>

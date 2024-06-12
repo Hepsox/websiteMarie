@@ -30,7 +30,7 @@ const router = createBrowserRouter([
         element: <Projet />,
         loader: async ({ params }) => {
           const response = await axios.get(
-            `${config.backend_url}/projet/${params.slug}`
+            `${config.backend_url}/projet/${params.slug}/#header`
           );
           return response.data;
         },
